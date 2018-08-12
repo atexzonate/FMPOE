@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/floor6_1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".building_map">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="250dp">
+
+            <TextView
+                android:id="@+id/subHeader"
+                android:layout_width="98dp"
+                android:layout_height="wrap_content"
+                android:text="Select Room Number"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="4dp"
+                tools:layout_editor_absoluteY="110dp" />
+
+            <Button
+                android:id="@+id/btnGq12"
+                android:layout_width="150dp"
+                android:layout_height="118dp"
+                android:background="#3d247ba0"
+                android:text="6007"
+                tools:layout_editor_absoluteX="178dp"
+                tools:layout_editor_absoluteY="331dp" />
+
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>
