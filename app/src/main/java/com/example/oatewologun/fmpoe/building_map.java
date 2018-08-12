@@ -13,6 +13,8 @@ public class building_map extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_building_map);
 
+	// testing
+
         room1 = findViewById(R.id.btnGq01);
         room2 = findViewById(R.id.btnGq02);
         room3 = findViewById(R.id.btnGq03);
