@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.support.v7.widget.CardView;
 import android.view.View;
 import android.widget.Toast;
-import android.widget.VideoView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -21,8 +20,6 @@ public class MainActivity extends AppCompatActivity {
         CardView fmInfoCardView = findViewById(R.id.fmInfo);
         CardView otherFeaturesCardView = findViewById(R.id.otherFeatures);
 
-
-
         fmPolicyCardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -34,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         facultyBuildingCardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                openFmPolicy();
+                openFacultyBuilding();
             }
         });
 
@@ -60,13 +57,14 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    public void openFmPolicy(){
-        Intent intent = new Intent(this, Main2Activity.class);
+    public void openFacultyBuilding(){
+        Intent intent = new Intent(this, FacultyBuilding.class);
         startActivity(intent);
     }
 
     public void openEmergenceyInfo(){
-        Intent intent = new Intent(this, Main3Activity.class);
+        Intent intent = new Intent(this, EmergencyInfo.class);
         startActivity(intent);
     }
+
 }

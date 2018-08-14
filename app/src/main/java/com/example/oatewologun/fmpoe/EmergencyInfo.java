@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.widget.MediaController;
 import android.widget.VideoView;
 
-public class Main3Activity extends AppCompatActivity {
+public class EmergencyInfo extends AppCompatActivity {
     VideoView videoView;
     MediaController mediaController;
 
@@ -14,7 +14,7 @@ public class Main3Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main3);
+        setContentView(R.layout.activity_emergency_info);
 
         videoView = (VideoView) findViewById(R.id.videoView2);
         mediaController = new MediaController(this);

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#FFC107</color>
-    <color name="colorPrimaryDark">#ffe600</color>
+    <color name="colorPrimaryDark">#FFC107</color>
+    <color name="colorPrimary">#ffe600</color>
     <color name="backgroundcolor">#fcfcfc</color>
     <color name="lightgray">#ededed</color>
     <color name="deeppurple">#7c4dff</color>
@@ -11,9 +11,21 @@
     <color name="darkblue">#23283a</color>
     <color name="testcolorblue">#152b38</color>
     <color name="lazi">#247ba0</color>
-    <color name="Sheen">#CFD0D6</color>
+    <color name="Sheen">#e5e5e7</color>
     <color name="sea">#B2DBBF</color>
     <color name="pink">#fe104d</color>
-
+    <color name="white">#fff</color>
+    <color name="black">#000</color>
+    <color name="red">#FF0000</color>
+    <color name="light_green">#00FF00</color>
+    <color name="blue">#0000FF</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="sky_blue">#CCEEFF</color>
+    <color name="gray">#A4A4A4</color>
+    <color name="light_gray">#E6E6E6</color>
+    <color name="orange">#DF7401</color>
+    <color name="light_orange">#F7D358</color>
+    <color name="purple">#5F04B4</color>
+    <color name="light_purple">#BE81F7</color>
 
 </resources>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "240794093319",
+    "firebase_url": "https://fmpoe-e1c81.firebaseio.com",
+    "project_id": "fmpoe-e1c81",
+    "storage_bucket": "fmpoe-e1c81.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:240794093319:android:b21f95f0931293b7",
+        "android_client_info": {
+          "package_name": "com.example.oatewologun.fmpoe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "240794093319-3uameo6rj4nlca5vsfbjv2jsktk9q0bl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAM8LWDUs7FL7eCDCZ7fBxjumqP2zupC7c"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#fcfcfc"
+    android:background="@color/Sheen"
     tools:context=".MainActivity">
 
     <android.support.design.widget.AppBarLayout
@@ -48,7 +48,7 @@
             android:id="@+id/ll"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#fcfcfc"
+            android:background="@color/Sheen"
             android:gravity="center"
             android:orientation="vertical"
             android:padding="10dp"
@@ -64,7 +64,7 @@
                 <android.support.v7.widget.CardView
                     android:id="@+id/fmPolicy"
                     android:layout_width="160dp"
-                    android:layout_height="190dp"
+                    android:layout_height="150dp"
                     android:layout_margin="10dp"
                     android:clickable="true"
                     android:foreground="?android:attr/selectableItemBackground">
@@ -88,28 +88,13 @@
                             android:layout_marginTop="10dp"
                             android:text="FM Policy"
                             android:textStyle="bold" />
-
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="1dp"
-                            android:layout_margin="10dp"
-                            android:background="@color/lightgray" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:gravity="center"
-                            android:padding="5dp"
-                            android:text="Check your bank activities"
-                            android:textColor="@android:color/darker_gray" />
-
                     </LinearLayout>
                 </android.support.v7.widget.CardView>
 
                 <android.support.v7.widget.CardView
                     android:id="@+id/facultyBuilding"
                     android:layout_width="160dp"
-                    android:layout_height="190dp"
+                    android:layout_height="150dp"
                     android:layout_margin="10dp"
                     android:clickable="true"
                     android:foreground="?android:attr/selectableItemBackground">
@@ -133,21 +118,6 @@
                             android:layout_marginTop="10dp"
                             android:text="Faculty Building "
                             android:textStyle="bold" />
-
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="1dp"
-                            android:layout_margin="10dp"
-                            android:background="@color/lightgray" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:gravity="center"
-                            android:padding="5dp"
-                            android:text="Check your bank activities"
-                            android:textColor="@android:color/darker_gray" />
-
                     </LinearLayout>
                 </android.support.v7.widget.CardView>
 
@@ -163,7 +133,7 @@
                 <android.support.v7.widget.CardView
                     android:id="@+id/emergenceInfo"
                     android:layout_width="160dp"
-                    android:layout_height="190dp"
+                    android:layout_height="150dp"
                     android:layout_margin="10dp"
                     android:clickable="true"
                     android:foreground="?android:attr/selectableItemBackground">
@@ -187,28 +157,13 @@
                             android:layout_marginTop="10dp"
                             android:text="Emergence Info"
                             android:textStyle="bold" />
-
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="1dp"
-                            android:layout_margin="10dp"
-                            android:background="@color/lightgray" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:gravity="center"
-                            android:padding="5dp"
-                            android:text="Check your bank activities"
-                            android:textColor="@android:color/darker_gray" />
-
                     </LinearLayout>
                 </android.support.v7.widget.CardView>
 
                 <android.support.v7.widget.CardView
                     android:id="@+id/fmInfo"
                     android:layout_width="160dp"
-                    android:layout_height="190dp"
+                    android:layout_height="150dp"
                     android:layout_margin="10dp"
                     android:clickable="true"
                     android:foreground="?android:attr/selectableItemBackground">
@@ -232,21 +187,6 @@
                             android:layout_marginTop="10dp"
                             android:text="FM Info"
                             android:textStyle="bold" />
-
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="1dp"
-                            android:layout_margin="10dp"
-                            android:background="@color/lightgray" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:gravity="center"
-                            android:padding="5dp"
-                            android:text="Check your bank activities"
-                            android:textColor="@android:color/darker_gray" />
-
                     </LinearLayout>
                 </android.support.v7.widget.CardView>
 
@@ -287,21 +227,6 @@
                             android:layout_marginTop="10dp"
                             android:text="Other Features"
                             android:textStyle="bold" />
-
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="1dp"
-                            android:layout_margin="10dp"
-                            android:background="@color/lightgray" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:gravity="center"
-                            android:padding="5dp"
-                            android:text="Check your bank activities"
-                            android:textColor="@android:color/darker_gray" />
-
                     </LinearLayout>
                 </android.support.v7.widget.CardView>
 

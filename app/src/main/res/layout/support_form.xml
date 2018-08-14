@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_marginStart="20dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginEnd="20dp"
+    android:layout_marginRight="20dp"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please rate the level of your satisfaction with the following post occupancy indicators for the space." />
+    <RadioGroup
+        android:layout_marginTop="5dp"
+        android:id="@+id/group"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:textSize="14sp"
+            android:buttonTint="@color/colorPrimaryDark"
+            android:textColor="@color/black"
+            android:id="@+id/five"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Highly Satisfied"/>
+        <RadioButton
+            android:textSize="14sp"
+            android:buttonTint="@color/colorPrimaryDark"
+            android:textColor="@color/black"
+            android:id="@+id/four"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Satisfied"/>
+        <RadioButton
+            android:textSize="14sp"
+            android:buttonTint="@color/colorPrimaryDark"
+            android:textColor="@color/black"
+            android:id="@+id/three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Neutral"/>
+        <RadioButton
+            android:textSize="14sp"
+            android:buttonTint="@color/colorPrimaryDark"
+            android:textColor="@color/black"
+            android:id="@+id/two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Unsatisfied"/>
+        <RadioButton
+            android:textSize="14sp"
+            android:buttonTint="@color/colorPrimaryDark"
+            android:textColor="@color/black"
+            android:id="@+id/one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Highly Unsatisfied"/>
+    </RadioGroup>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/black" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cleanliness" />
+        <me.zhanghai.android.materialratingbar.MaterialRatingBar
+            android:id="@+id/cleanliness"
+            style="@style/Widget.MaterialRatingBar.RatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:numStars="5"
+            android:progressTint="@color/colorPrimaryDark"
+            android:rating="0"
+            android:stepSize="1" />
+        <TextView
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Maintenance" />
+        <me.zhanghai.android.materialratingbar.MaterialRatingBar
+            android:id="@+id/maintenance"
+            style="@style/Widget.MaterialRatingBar.RatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:numStars="5"
+            android:progressTint="@color/colorPrimaryDark"
+            android:rating="0"
+            android:stepSize="1" />
+        <TextView
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FM response to necessary repairs" />
+        <me.zhanghai.android.materialratingbar.MaterialRatingBar
+            android:id="@+id/fm"
+            style="@style/Widget.MaterialRatingBar.RatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:numStars="5"
+            android:progressTint="@color/colorPrimaryDark"
+            android:rating="0"
+            android:stepSize="1" />
+        <TextView
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Security services" />
+        <me.zhanghai.android.materialratingbar.MaterialRatingBar
+            android:id="@+id/security"
+            style="@style/Widget.MaterialRatingBar.RatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:numStars="5"
+            android:progressTint="@color/colorPrimaryDark"
+            android:rating="0"
+            android:stepSize="1" />
+        <TextView
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Entrance access and emergence exit" />
+        <me.zhanghai.android.materialratingbar.MaterialRatingBar
+            android:id="@+id/entrance"
+            style="@style/Widget.MaterialRatingBar.RatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:numStars="5"
+            android:progressTint="@color/colorPrimaryDark"
+            android:rating="0"
+            android:stepSize="1" />
+        <TextView
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clarity of emergence exit signs" />
+        <me.zhanghai.android.materialratingbar.MaterialRatingBar
+            android:id="@+id/clarity"
+            style="@style/Widget.MaterialRatingBar.RatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:numStars="5"
+            android:progressTint="@color/colorPrimaryDark"
+            android:rating="0"
+            android:stepSize="1" />
+        <TextView
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quality of elevators/stairways" />
+        <me.zhanghai.android.materialratingbar.MaterialRatingBar
+            android:id="@+id/quality"
+            style="@style/Widget.MaterialRatingBar.RatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:numStars="5"
+            android:progressTint="@color/colorPrimaryDark"
+            android:rating="0"
+            android:stepSize="1" />
+        <TextView
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wayfinding/directories" />
+        <me.zhanghai.android.materialratingbar.MaterialRatingBar
+            android:id="@+id/wayfinding"
+            style="@style/Widget.MaterialRatingBar.RatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:numStars="5"
+            android:progressTint="@color/colorPrimaryDark"
+            android:rating="0"
+            android:stepSize="1" />
+        <TextView
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Conveniences units" />
+        <me.zhanghai.android.materialratingbar.MaterialRatingBar
+            android:id="@+id/conveniences"
+            style="@style/Widget.MaterialRatingBar.RatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:numStars="5"
+            android:progressTint="@color/colorPrimaryDark"
+            android:rating="0"
+            android:stepSize="1" />
+        <TextView
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Water supply/kitchenette" />
+        <me.zhanghai.android.materialratingbar.MaterialRatingBar
+            android:id="@+id/water"
+            style="@style/Widget.MaterialRatingBar.RatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:numStars="5"
+            android:progressTint="@color/colorPrimaryDark"
+            android:rating="0"
+            android:stepSize="1" />
+        <TextView
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fire safety (fire alarm/equipment)" />
+        <me.zhanghai.android.materialratingbar.MaterialRatingBar
+            android:id="@+id/fire"
+            style="@style/Widget.MaterialRatingBar.RatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:numStars="5"
+            android:progressTint="@color/colorPrimaryDark"
+            android:rating="0"
+            android:stepSize="1" />
+        <TextView
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Regular user's orientation on functionality of furniture, technology and other services in learning space" />
+        <me.zhanghai.android.materialratingbar.MaterialRatingBar
+            android:id="@+id/regular"
+            style="@style/Widget.MaterialRatingBar.RatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:numStars="5"
+            android:progressTint="@color/colorPrimaryDark"
+            android:rating="0"
+            android:stepSize="1" />
+        <TextView
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Health and safety issues" />
+        <me.zhanghai.android.materialratingbar.MaterialRatingBar
+            android:id="@+id/health"
+            style="@style/Widget.MaterialRatingBar.RatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:numStars="5"
+            android:progressTint="@color/colorPrimaryDark"
+            android:rating="0"
+            android:stepSize="1" />
+        <Button
+            android:layout_marginTop="20dp"
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="Submit"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+</LinearLayout>

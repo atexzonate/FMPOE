@@ -2,15 +2,14 @@
     <string name="app_name">FMPOE</string>
 
     <string-array name="redCenterDropDown">
-        <item> Choose Level </item>
-        <item> Ground Level </item>
-        <item> Mezzanine Level </item>
-        <item> Level 1 </item>
-        <item> Level 2 </item>
-        <item> Level 3 </item>
-        <item> Level 4 </item>
-        <item> Level 5 </item>
-        <item> Level 6 </item>
+        <item>Ground Level</item>
+        <item>Mezzanine Level</item>
+        <item>Level 1</item>
+        <item>Level 2</item>
+        <item>Level 3</item>
+        <item>Level 4</item>
+        <item>Level 5</item>
+        <item>Level 6</item>
     </string-array>
 
     <string name="complain">Make a Complain</string>
