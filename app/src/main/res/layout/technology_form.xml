@@ -28,7 +28,7 @@
             android:id="@+id/five"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Highly Satisfied"/>
+            android:text="Highly Satisfied (5*)"/>
         <RadioButton
             android:textSize="14sp"
             android:buttonTint="@color/colorPrimaryDark"
@@ -36,7 +36,7 @@
             android:id="@+id/four"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Satisfied"/>
+            android:text="Satisfied (4*)"/>
         <RadioButton
             android:textSize="14sp"
             android:buttonTint="@color/colorPrimaryDark"
@@ -44,7 +44,7 @@
             android:id="@+id/three"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Neutral"/>
+            android:text="Neutral (3*)"/>
         <RadioButton
             android:textSize="14sp"
             android:buttonTint="@color/colorPrimaryDark"
@@ -52,7 +52,7 @@
             android:id="@+id/two"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Unsatisfied"/>
+            android:text="Unsatisfied (2*)"/>
         <RadioButton
             android:textSize="14sp"
             android:buttonTint="@color/colorPrimaryDark"
@@ -60,7 +60,7 @@
             android:id="@+id/one"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Highly Unsatisfied"/>
+            android:text="Highly Unsatisfied (1*)"/>
     </RadioGroup>
     <View
         android:layout_width="match_parent"
@@ -239,7 +239,7 @@
             android:layout_marginTop="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Quality of audio contact in classrooms, labs, office" />
+            android:text="Quality of audio contact in studio and labs" />
         <me.zhanghai.android.materialratingbar.MaterialRatingBar
             android:id="@+id/quality2"
             style="@style/Widget.MaterialRatingBar.RatingBar"

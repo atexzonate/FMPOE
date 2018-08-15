@@ -77,7 +77,7 @@
             android:textSize="14sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Adequacy of daylighting" />
+            android:text="Adequacy/location of power sockets" />
         <me.zhanghai.android.materialratingbar.MaterialRatingBar
             android:id="@+id/adequacy"
             style="@style/Widget.MaterialRatingBar.RatingBar"
@@ -95,7 +95,25 @@
             android:textSize="14sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Provision of views of exterior" />
+            android:text="Operation of electrical fittings" />
+        <me.zhanghai.android.materialratingbar.MaterialRatingBar
+            android:id="@+id/operation"
+            style="@style/Widget.MaterialRatingBar.RatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:numStars="5"
+            android:progressTint="@color/colorPrimaryDark"
+            android:rating="0"
+            android:stepSize="1" />
+        <TextView
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Provision of charging stationsa" />
         <me.zhanghai.android.materialratingbar.MaterialRatingBar
             android:id="@+id/provision"
             style="@style/Widget.MaterialRatingBar.RatingBar"
@@ -108,14 +126,14 @@
             android:rating="0"
             android:stepSize="1" />
         <TextView
-            android:layout_marginTop="5dp"
             android:textColor="@color/black"
             android:textSize="14sp"
+            android:layout_marginTop="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Ease of lighting control" />
+            android:text="Network connectivity/communication channels" />
         <me.zhanghai.android.materialratingbar.MaterialRatingBar
-            android:id="@+id/ease"
+            android:id="@+id/network"
             style="@style/Widget.MaterialRatingBar.RatingBar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -131,9 +149,9 @@
             android:layout_marginTop="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Thermal comfort" />
+            android:text="Speed and quality of internet" />
         <me.zhanghai.android.materialratingbar.MaterialRatingBar
-            android:id="@+id/thermal"
+            android:id="@+id/speed"
             style="@style/Widget.MaterialRatingBar.RatingBar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -149,9 +167,9 @@
             android:layout_marginTop="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Temperature control" />
+            android:text="Availability and ease of connection" />
         <me.zhanghai.android.materialratingbar.MaterialRatingBar
-            android:id="@+id/temperature"
+            android:id="@+id/availability"
             style="@style/Widget.MaterialRatingBar.RatingBar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -167,9 +185,9 @@
             android:layout_marginTop="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Acoustic comfort quality" />
+            android:text="Users friendliness of internet network" />
         <me.zhanghai.android.materialratingbar.MaterialRatingBar
-            android:id="@+id/acoustic"
+            android:id="@+id/users"
             style="@style/Widget.MaterialRatingBar.RatingBar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -185,9 +203,9 @@
             android:layout_marginTop="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Indoor air quality" />
+            android:text="Quality of intercom systems" />
         <me.zhanghai.android.materialratingbar.MaterialRatingBar
-            android:id="@+id/indoor"
+            android:id="@+id/intercom"
             style="@style/Widget.MaterialRatingBar.RatingBar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -203,9 +221,9 @@
             android:layout_marginTop="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Quality of colour of finishes" />
+            android:text="Visual display/software's" />
         <me.zhanghai.android.materialratingbar.MaterialRatingBar
-            android:id="@+id/quality"
+            android:id="@+id/visual"
             style="@style/Widget.MaterialRatingBar.RatingBar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -221,9 +239,99 @@
             android:layout_marginTop="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Building appearance and design" />
+            android:text="Quality of audio contact in the studio and labs" />
         <me.zhanghai.android.materialratingbar.MaterialRatingBar
-            android:id="@+id/building"
+            android:id="@+id/audio"
+            style="@style/Widget.MaterialRatingBar.RatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:numStars="5"
+            android:progressTint="@color/colorPrimaryDark"
+            android:rating="0"
+            android:stepSize="1" />
+        <TextView
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quality and functionality of computers" />
+        <me.zhanghai.android.materialratingbar.MaterialRatingBar
+            android:id="@+id/functionality"
+            style="@style/Widget.MaterialRatingBar.RatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:numStars="5"
+            android:progressTint="@color/colorPrimaryDark"
+            android:rating="0"
+            android:stepSize="1" />
+        <TextView
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quantity of computers available for use" />
+        <me.zhanghai.android.materialratingbar.MaterialRatingBar
+            android:id="@+id/quantity"
+            style="@style/Widget.MaterialRatingBar.RatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:numStars="5"
+            android:progressTint="@color/colorPrimaryDark"
+            android:rating="0"
+            android:stepSize="1" />
+        <TextView
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quality and quantity of printers" />
+        <me.zhanghai.android.materialratingbar.MaterialRatingBar
+            android:id="@+id/printers"
+            style="@style/Widget.MaterialRatingBar.RatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:numStars="5"
+            android:progressTint="@color/colorPrimaryDark"
+            android:rating="0"
+            android:stepSize="1" />
+        <TextView
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Overall quality of computers/printers" />
+        <me.zhanghai.android.materialratingbar.MaterialRatingBar
+            android:id="@+id/overall"
+            style="@style/Widget.MaterialRatingBar.RatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:numStars="5"
+            android:progressTint="@color/colorPrimaryDark"
+            android:rating="0"
+            android:stepSize="1" />
+        <TextView
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Level of cleanliness of workshops and labs" />
+        <me.zhanghai.android.materialratingbar.MaterialRatingBar
+            android:id="@+id/level"
             style="@style/Widget.MaterialRatingBar.RatingBar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

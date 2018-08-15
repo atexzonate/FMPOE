@@ -25,28 +25,28 @@ public class FullScreenImage extends AppCompatActivity {
             return;
 
         if(level.equals(Constants.gLvl)){
-            image.setImageResource(R.drawable.h13_g);
+            image.setImageResource(R.drawable.h13_g_);
         }
         else if(level.equals(Constants.mLvl)){
-            image.setImageResource(R.drawable.h13_m);
+            image.setImageResource(R.drawable.h13_m_);
         }
         else if(level.equals(Constants.lvl1)){
-            image.setImageResource(R.drawable.h13_l1);
+            image.setImageResource(R.drawable.h13_l1_);
         }
         else if(level.equals(Constants.lvl2)){
-            image.setImageResource(R.drawable.h13_l2);
+            image.setImageResource(R.drawable.h13_l2_);
         }
         else if(level.equals(Constants.lvl3)){
-            image.setImageResource(R.drawable.h13_l3);
+            image.setImageResource(R.drawable.h13_l3_);
         }
         else if(level.equals(Constants.lvl4)){
-            image.setImageResource(R.drawable.h13_l4);
+            image.setImageResource(R.drawable.h13_l4_);
         }
         else if(level.equals(Constants.lvl5)){
-            image.setImageResource(R.drawable.h13_l5);
+            image.setImageResource(R.drawable.h13_l5_);
         }
         else if(level.equals(Constants.lvl6)){
-            image.setImageResource(R.drawable.h13_l6);
+            image.setImageResource(R.drawable.h13_l6_);
         }
     }
 }

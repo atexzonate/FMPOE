@@ -77,9 +77,9 @@
             android:textSize="14sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Adequacy of daylighting" />
+            android:text="Conveniences units" />
         <me.zhanghai.android.materialratingbar.MaterialRatingBar
-            android:id="@+id/adequacy"
+            android:id="@+id/conveniences"
             style="@style/Widget.MaterialRatingBar.RatingBar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -95,115 +95,7 @@
             android:textSize="14sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Provision of views of exterior" />
-        <me.zhanghai.android.materialratingbar.MaterialRatingBar
-            android:id="@+id/provision"
-            style="@style/Widget.MaterialRatingBar.RatingBar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
-            android:layout_marginTop="5dp"
-            android:numStars="5"
-            android:progressTint="@color/colorPrimaryDark"
-            android:rating="0"
-            android:stepSize="1" />
-        <TextView
-            android:layout_marginTop="5dp"
-            android:textColor="@color/black"
-            android:textSize="14sp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Ease of lighting control" />
-        <me.zhanghai.android.materialratingbar.MaterialRatingBar
-            android:id="@+id/ease"
-            style="@style/Widget.MaterialRatingBar.RatingBar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
-            android:layout_marginTop="5dp"
-            android:numStars="5"
-            android:progressTint="@color/colorPrimaryDark"
-            android:rating="0"
-            android:stepSize="1" />
-        <TextView
-            android:textColor="@color/black"
-            android:textSize="14sp"
-            android:layout_marginTop="5dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Thermal comfort" />
-        <me.zhanghai.android.materialratingbar.MaterialRatingBar
-            android:id="@+id/thermal"
-            style="@style/Widget.MaterialRatingBar.RatingBar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
-            android:layout_marginTop="5dp"
-            android:numStars="5"
-            android:progressTint="@color/colorPrimaryDark"
-            android:rating="0"
-            android:stepSize="1" />
-        <TextView
-            android:textColor="@color/black"
-            android:textSize="14sp"
-            android:layout_marginTop="5dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Temperature control" />
-        <me.zhanghai.android.materialratingbar.MaterialRatingBar
-            android:id="@+id/temperature"
-            style="@style/Widget.MaterialRatingBar.RatingBar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
-            android:layout_marginTop="5dp"
-            android:numStars="5"
-            android:progressTint="@color/colorPrimaryDark"
-            android:rating="0"
-            android:stepSize="1" />
-        <TextView
-            android:textColor="@color/black"
-            android:textSize="14sp"
-            android:layout_marginTop="5dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Acoustic comfort quality" />
-        <me.zhanghai.android.materialratingbar.MaterialRatingBar
-            android:id="@+id/acoustic"
-            style="@style/Widget.MaterialRatingBar.RatingBar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
-            android:layout_marginTop="5dp"
-            android:numStars="5"
-            android:progressTint="@color/colorPrimaryDark"
-            android:rating="0"
-            android:stepSize="1" />
-        <TextView
-            android:textColor="@color/black"
-            android:textSize="14sp"
-            android:layout_marginTop="5dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Indoor air quality" />
-        <me.zhanghai.android.materialratingbar.MaterialRatingBar
-            android:id="@+id/indoor"
-            style="@style/Widget.MaterialRatingBar.RatingBar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
-            android:layout_marginTop="5dp"
-            android:numStars="5"
-            android:progressTint="@color/colorPrimaryDark"
-            android:rating="0"
-            android:stepSize="1" />
-        <TextView
-            android:textColor="@color/black"
-            android:textSize="14sp"
-            android:layout_marginTop="5dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Quality of colour of finishes" />
+            android:text="Quality/functionality of toilet fixtures" />
         <me.zhanghai.android.materialratingbar.MaterialRatingBar
             android:id="@+id/quality"
             style="@style/Widget.MaterialRatingBar.RatingBar"
@@ -216,14 +108,104 @@
             android:rating="0"
             android:stepSize="1" />
         <TextView
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adequacy number of toilet" />
+        <me.zhanghai.android.materialratingbar.MaterialRatingBar
+            android:id="@+id/adequacy"
+            style="@style/Widget.MaterialRatingBar.RatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:numStars="5"
+            android:progressTint="@color/colorPrimaryDark"
+            android:rating="0"
+            android:stepSize="1" />
+        <TextView
             android:textColor="@color/black"
             android:textSize="14sp"
             android:layout_marginTop="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Building appearance and design" />
+            android:text="Location of toilet" />
         <me.zhanghai.android.materialratingbar.MaterialRatingBar
-            android:id="@+id/building"
+            android:id="@+id/location"
+            style="@style/Widget.MaterialRatingBar.RatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:numStars="5"
+            android:progressTint="@color/colorPrimaryDark"
+            android:rating="0"
+            android:stepSize="1" />
+        <TextView
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cleanliness of toilet" />
+        <me.zhanghai.android.materialratingbar.MaterialRatingBar
+            android:id="@+id/cleanliness"
+            style="@style/Widget.MaterialRatingBar.RatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:numStars="5"
+            android:progressTint="@color/colorPrimaryDark"
+            android:rating="0"
+            android:stepSize="1" />
+        <TextView
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Overall quality of conveniences units" />
+        <me.zhanghai.android.materialratingbar.MaterialRatingBar
+            android:id="@+id/overall"
+            style="@style/Widget.MaterialRatingBar.RatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:numStars="5"
+            android:progressTint="@color/colorPrimaryDark"
+            android:rating="0"
+            android:stepSize="1" />
+        <TextView
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Provision/flow of portable water" />
+        <me.zhanghai.android.materialratingbar.MaterialRatingBar
+            android:id="@+id/provision"
+            style="@style/Widget.MaterialRatingBar.RatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:numStars="5"
+            android:progressTint="@color/colorPrimaryDark"
+            android:rating="0"
+            android:stepSize="1" />
+        <TextView
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Air quality smell" />
+        <me.zhanghai.android.materialratingbar.MaterialRatingBar
+            android:id="@+id/air"
             style="@style/Widget.MaterialRatingBar.RatingBar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

@@ -63,27 +63,27 @@ public class FloorPlan extends AppCompatActivity {
         }
 
         if (level.equals(Constants.gLvl)) {
-            image.setImageResource(R.drawable.h13_g);
+            image.setImageResource(R.drawable.h13_g_);
         } else if (level.equals(Constants.mLvl)) {
-            image.setImageResource(R.drawable.h13_m);
+            image.setImageResource(R.drawable.h13_m_);
         } else if (level.equals(Constants.lvl1)) {
             image.setImageResource(R.drawable.h13_l1);
         } else if (level.equals(Constants.lvl2)) {
-            image.setImageResource(R.drawable.h13_l2);
+            image.setImageResource(R.drawable.h13_l2_);
             String[] temp = Constants.getLevel2_Rooms();
             arrSize = temp.length;
         } else if (level.equals(Constants.lvl3)) {
-            image.setImageResource(R.drawable.h13_l3);
+            image.setImageResource(R.drawable.h13_l3_);
             String[] temp = Constants.getLevel3_Rooms();
             arrSize = temp.length;
         } else if (level.equals(Constants.lvl4)) {
-            image.setImageResource(R.drawable.h13_l4);
+            image.setImageResource(R.drawable.h13_l4_);
             String[] temp = Constants.getLevel4_Rooms();
             arrSize = temp.length;
         } else if (level.equals(Constants.lvl5)) {
-            image.setImageResource(R.drawable.h13_l5);
+            image.setImageResource(R.drawable.h13_l5_);
         } else if (level.equals(Constants.lvl6)) {
-            image.setImageResource(R.drawable.h13_l6);
+            image.setImageResource(R.drawable.h13_l6_);
             String[] temp = Constants.getLevel6_Rooms();
             arrSize = temp.length;
         }
@@ -137,6 +137,41 @@ public class FloorPlan extends AppCompatActivity {
     public void form(View view) {
         if (selectedRoomId == null && enterRoomId.getText().toString().isEmpty()) {
             Toast.makeText(FloorPlan.this, "Please select Room ID first!", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        if(selectedRoomId.contains("Lift") || enterRoomId.getText().toString().toLowerCase().contains("lift")){
+            Intent intent = new Intent(FloorPlan.this, FillPOEForm.class);
+            intent.putExtra("level", level);
+            if(selectedRoomId != null)
+                intent.putExtra("room_id", selectedRoomId);
+            else
+                intent.putExtra("room_id", enterRoomId.getText().toString());
+            intent.putExtra("form", "Elevator");
+            startActivity(intent);
+            return;
+        }
+        if(selectedRoomId.contains("Lab") || enterRoomId.getText().toString().toLowerCase().contains("lab")
+                ||enterRoomId.getText().toString().toLowerCase().contains("workshop")){
+            Intent intent = new Intent(FloorPlan.this, FillPOEForm.class);
+            intent.putExtra("level", level);
+            if(selectedRoomId != null)
+                intent.putExtra("room_id", selectedRoomId);
+            else
+                intent.putExtra("room_id", enterRoomId.getText().toString());
+            intent.putExtra("form", "Workshop/Lab");
+            startActivity(intent);
+            return;
+        }
+        if(selectedRoomId.contains("Toilet") || enterRoomId.getText().toString().toLowerCase().contains("toilet")){
+            Intent intent = new Intent(FloorPlan.this, FillPOEForm.class);
+            intent.putExtra("level", level);
+            if(selectedRoomId != null)
+                intent.putExtra("room_id", selectedRoomId);
+            else
+                intent.putExtra("room_id", enterRoomId.getText().toString());
+            intent.putExtra("form", "Toilet");
+            startActivity(intent);
             return;
         }
 
