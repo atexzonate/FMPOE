@@ -3,7 +3,6 @@ package com.example.oatewologun.fmpoe.model;
 public class AmbientModel {
     String level;
     String room_id;
-    int satisfaction;
     int daylighting_adequacy;
     int provision_exterior;
     int lighting_control;
@@ -28,14 +27,6 @@ public class AmbientModel {
 
     public void setRoom_id(String room_id) {
         this.room_id = room_id;
-    }
-
-    public int getSatisfaction() {
-        return satisfaction;
-    }
-
-    public void setSatisfaction(int satisfaction) {
-        this.satisfaction = satisfaction;
     }
 
     public int getDaylighting_adequacy() {

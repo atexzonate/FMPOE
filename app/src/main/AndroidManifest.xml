@@ -33,7 +33,7 @@
             android:name=".FillPOEForm"
             android:screenOrientation="portrait" />
         <activity android:name=".FullScreenImage"
-            android:screenOrientation="sensorLandscape"/>
+            android:screenOrientation="portrait"/>
         <activity android:name=".ComplaintForm"
             android:screenOrientation="portrait"></activity>
     </application>

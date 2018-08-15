@@ -19,14 +19,6 @@ public class ElevatorModel {
         this.room_id = room_id;
     }
 
-    public int getSatisfaction() {
-        return satisfaction;
-    }
-
-    public void setSatisfaction(int satisfaction) {
-        this.satisfaction = satisfaction;
-    }
-
     public int getMaintenance() {
         return maintenance;
     }
@@ -76,7 +68,6 @@ public class ElevatorModel {
     }
 
     String room_id;
-    int satisfaction;
     int maintenance;
     int number;
     int elevator_lobbies;

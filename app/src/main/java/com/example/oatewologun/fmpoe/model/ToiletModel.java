@@ -3,7 +3,6 @@ package com.example.oatewologun.fmpoe.model;
 public class ToiletModel {
     String level;
     String room_id;
-    int satisfaction;
     int conveniences_units;
     int toilet_fixtures;
     int adequacy_number;
@@ -27,14 +26,6 @@ public class ToiletModel {
 
     public void setRoom_id(String room_id) {
         this.room_id = room_id;
-    }
-
-    public int getSatisfaction() {
-        return satisfaction;
-    }
-
-    public void setSatisfaction(int satisfaction) {
-        this.satisfaction = satisfaction;
     }
 
     public int getConveniences_units() {

@@ -28,18 +28,6 @@ import butterknife.Unbinder;
 import me.zhanghai.android.materialratingbar.MaterialRatingBar;
 
 public class SupportForm extends Fragment {
-    @BindView(R.id.five)
-    RadioButton five;
-    @BindView(R.id.four)
-    RadioButton four;
-    @BindView(R.id.three)
-    RadioButton three;
-    @BindView(R.id.two)
-    RadioButton two;
-    @BindView(R.id.one)
-    RadioButton one;
-    @BindView(R.id.group)
-    RadioGroup group;
     @BindView(R.id.cleanliness)
     MaterialRatingBar cleanliness;
     @BindView(R.id.maintenance)
@@ -100,8 +88,7 @@ public class SupportForm extends Fragment {
     @OnClick(R.id.submit)
     public void onViewClicked() {
         boolean submit = true;
-        if(group.getCheckedRadioButtonId() == -1
-                ||cleanliness.getRating()==0
+        if(cleanliness.getRating()==0
                 ||maintenance.getRating()==0
                 ||fm.getRating()==0
                 ||security.getRating()==0
@@ -130,16 +117,6 @@ public class SupportForm extends Fragment {
             SupportModel model = new SupportModel();
             model.setLevel(activity.level);
             model.setRoom_id(activity.roomID);
-            if(group.getCheckedRadioButtonId() == R.id.five)
-                model.setSatisfaction(5);
-            else if(group.getCheckedRadioButtonId() == R.id.four)
-                model.setSatisfaction(4);
-            else if(group.getCheckedRadioButtonId() == R.id.three)
-                model.setSatisfaction(3);
-            else if(group.getCheckedRadioButtonId() == R.id.two)
-                model.setSatisfaction(2);
-            else if(group.getCheckedRadioButtonId() == R.id.one)
-                model.setSatisfaction(1);
             model.setCleanliness((int) cleanliness.getRating());
             model.setMaintenance((int) maintenance.getRating());
             model.setFm_response((int) fm.getRating());

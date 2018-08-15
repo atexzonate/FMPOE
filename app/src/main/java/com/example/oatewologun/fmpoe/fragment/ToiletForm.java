@@ -28,18 +28,6 @@ import butterknife.Unbinder;
 import me.zhanghai.android.materialratingbar.MaterialRatingBar;
 
 public class ToiletForm extends Fragment {
-    @BindView(R.id.five)
-    RadioButton five;
-    @BindView(R.id.four)
-    RadioButton four;
-    @BindView(R.id.three)
-    RadioButton three;
-    @BindView(R.id.two)
-    RadioButton two;
-    @BindView(R.id.one)
-    RadioButton one;
-    @BindView(R.id.group)
-    RadioGroup group;
     @BindView(R.id.conveniences)
     MaterialRatingBar conveniences;
     @BindView(R.id.quality)
@@ -90,8 +78,7 @@ public class ToiletForm extends Fragment {
     @OnClick(R.id.submit)
     public void onViewClicked() {
         boolean submit = true;
-        if(group.getCheckedRadioButtonId() == -1
-                ||conveniences.getRating()==0
+        if(conveniences.getRating()==0
                 ||quality.getRating()==0
                 ||adequacy.getRating()==0
                 ||location.getRating()==0
@@ -115,16 +102,6 @@ public class ToiletForm extends Fragment {
             ToiletModel model = new ToiletModel();
             model.setLevel(activity.level);
             model.setRoom_id(activity.roomID);
-            if(group.getCheckedRadioButtonId() == R.id.five)
-                model.setSatisfaction(5);
-            else if(group.getCheckedRadioButtonId() == R.id.four)
-                model.setSatisfaction(4);
-            else if(group.getCheckedRadioButtonId() == R.id.three)
-                model.setSatisfaction(3);
-            else if(group.getCheckedRadioButtonId() == R.id.two)
-                model.setSatisfaction(2);
-            else if(group.getCheckedRadioButtonId() == R.id.one)
-                model.setSatisfaction(1);
             model.setConveniences_units((int) conveniences.getRating());
             model.setToilet_fixtures((int) quality.getRating());
             model.setAdequacy_number((int) adequacy.getRating());

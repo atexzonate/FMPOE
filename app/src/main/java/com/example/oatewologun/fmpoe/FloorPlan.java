@@ -19,6 +19,7 @@ import com.example.oatewologun.fmpoe.util.Constants;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import uk.co.senab.photoview.PhotoView;
 
 public class FloorPlan extends AppCompatActivity {
     String level;
@@ -31,7 +32,7 @@ public class FloorPlan extends AppCompatActivity {
     @BindView(R.id.form)
     TextView form;
     @BindView(R.id.image)
-    ImageView image;
+    PhotoView image;
     String selectedRoomId;
     @BindView(R.id.buttonsPanel)
     LinearLayout buttonsPanel;
@@ -67,7 +68,7 @@ public class FloorPlan extends AppCompatActivity {
         } else if (level.equals(Constants.mLvl)) {
             image.setImageResource(R.drawable.h13_m_);
         } else if (level.equals(Constants.lvl1)) {
-            image.setImageResource(R.drawable.h13_l1);
+            image.setImageResource(R.drawable.h13_l1_);
         } else if (level.equals(Constants.lvl2)) {
             image.setImageResource(R.drawable.h13_l2_);
             String[] temp = Constants.getLevel2_Rooms();
@@ -198,8 +199,8 @@ public class FloorPlan extends AppCompatActivity {
 
     @OnClick(R.id.image)
     public void onViewClicked() {
-        Intent intent = new Intent(this, FullScreenImage.class);
+        /*Intent intent = new Intent(this, FullScreenImage.class);
         intent.putExtra("level", level);
-        startActivity(intent);
+        startActivity(intent);*/
     }
 }

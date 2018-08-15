@@ -3,7 +3,6 @@ package com.example.oatewologun.fmpoe.model;
 public class SupportModel {
     String level;
     String room_id;
-    int satisfaction;
     int cleanliness;
     int maintenance;
     int fm_response;
@@ -32,14 +31,6 @@ public class SupportModel {
 
     public void setRoom_id(String room_id) {
         this.room_id = room_id;
-    }
-
-    public int getSatisfaction() {
-        return satisfaction;
-    }
-
-    public void setSatisfaction(int satisfaction) {
-        this.satisfaction = satisfaction;
     }
 
     public int getCleanliness() {

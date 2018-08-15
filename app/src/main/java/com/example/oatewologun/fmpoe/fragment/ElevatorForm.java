@@ -29,18 +29,6 @@ import butterknife.Unbinder;
 import me.zhanghai.android.materialratingbar.MaterialRatingBar;
 
 public class ElevatorForm extends Fragment {
-    @BindView(R.id.five)
-    RadioButton five;
-    @BindView(R.id.four)
-    RadioButton four;
-    @BindView(R.id.three)
-    RadioButton three;
-    @BindView(R.id.two)
-    RadioButton two;
-    @BindView(R.id.one)
-    RadioButton one;
-    @BindView(R.id.group)
-    RadioGroup group;
     @BindView(R.id.maintenance)
     MaterialRatingBar maintenance;
     @BindView(R.id.number)
@@ -87,8 +75,7 @@ public class ElevatorForm extends Fragment {
     @OnClick(R.id.submit)
     public void onViewClicked() {
         boolean submit = true;
-        if(group.getCheckedRadioButtonId() == -1
-                ||maintenance.getRating()==0
+        if(maintenance.getRating()==0
                 ||number.getRating()==0
                 ||quality.getRating()==0
                 ||width.getRating()==0
@@ -110,16 +97,6 @@ public class ElevatorForm extends Fragment {
             ElevatorModel model = new ElevatorModel();
             model.setLevel(activity.level);
             model.setRoom_id(activity.roomID);
-            if(group.getCheckedRadioButtonId() == R.id.five)
-                model.setSatisfaction(5);
-            else if(group.getCheckedRadioButtonId() == R.id.four)
-                model.setSatisfaction(4);
-            else if(group.getCheckedRadioButtonId() == R.id.three)
-                model.setSatisfaction(3);
-            else if(group.getCheckedRadioButtonId() == R.id.two)
-                model.setSatisfaction(2);
-            else if(group.getCheckedRadioButtonId() == R.id.one)
-                model.setSatisfaction(1);
             model.setMaintenance((int) maintenance.getRating());
             model.setNumber((int) number.getRating());
             model.setElevator_lobbies((int) quality.getRating());

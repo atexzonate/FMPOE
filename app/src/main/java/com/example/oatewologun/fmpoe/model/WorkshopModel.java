@@ -3,7 +3,6 @@ package com.example.oatewologun.fmpoe.model;
 public class WorkshopModel {
     String level;
     String room_id;
-    int satisfaction;
     int sockets_adequacy;
     int electrical_fittings;
     int charging_stations;
@@ -34,14 +33,6 @@ public class WorkshopModel {
 
     public void setRoom_id(String room_id) {
         this.room_id = room_id;
-    }
-
-    public int getSatisfaction() {
-        return satisfaction;
-    }
-
-    public void setSatisfaction(int satisfaction) {
-        this.satisfaction = satisfaction;
     }
 
     public int getSockets_adequacy() {

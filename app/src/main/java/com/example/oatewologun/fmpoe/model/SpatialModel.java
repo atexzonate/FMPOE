@@ -3,7 +3,6 @@ package com.example.oatewologun.fmpoe.model;
 public class SpatialModel {
     String level;
     String room_id;
-    int satisfaction;
     int proximities_space;
     int seating_density;
     int interior_visibility;
@@ -27,14 +26,6 @@ public class SpatialModel {
 
     public void setRoom_id(String room_id) {
         this.room_id = room_id;
-    }
-
-    public int getSatisfaction() {
-        return satisfaction;
-    }
-
-    public void setSatisfaction(int satisfaction) {
-        this.satisfaction = satisfaction;
     }
 
     public int getProximities_space() {

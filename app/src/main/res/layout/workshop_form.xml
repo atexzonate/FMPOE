@@ -15,53 +15,145 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Please rate the level of your satisfaction with the following post occupancy indicators for the space." />
-    <RadioGroup
+    <RelativeLayout
         android:layout_marginTop="5dp"
-        android:id="@+id/group"
-        android:orientation="vertical"
-        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
         android:layout_height="wrap_content">
-        <RadioButton
-            android:textSize="14sp"
-            android:buttonTint="@color/colorPrimaryDark"
+        <TextView
             android:textColor="@color/black"
-            android:id="@+id/five"
+            android:textSize="14sp"
+            android:layout_centerVertical="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Highly Satisfied (5*)"/>
-        <RadioButton
-            android:textSize="14sp"
-            android:buttonTint="@color/colorPrimaryDark"
-            android:textColor="@color/black"
-            android:id="@+id/four"
+            android:text="Highly Satisfied" />
+        <me.zhanghai.android.materialratingbar.MaterialRatingBar
+            style="@style/Widget.MaterialRatingBar.RatingBar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Satisfied (4*)"/>
-        <RadioButton
-            android:textSize="14sp"
-            android:buttonTint="@color/colorPrimaryDark"
+            android:layout_centerVertical="true"
+            android:isIndicator="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:numStars="5"
+            android:progressTint="@color/colorPrimaryDark"
+            android:rating="5"
+            android:stepSize="1" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content">
+        <TextView
             android:textColor="@color/black"
-            android:id="@+id/three"
+            android:textSize="14sp"
+            android:layout_centerVertical="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Neutral (3*)"/>
-        <RadioButton
-            android:textSize="14sp"
-            android:buttonTint="@color/colorPrimaryDark"
-            android:textColor="@color/black"
-            android:id="@+id/two"
+            android:text="Satisfied" />
+        <me.zhanghai.android.materialratingbar.MaterialRatingBar
+            style="@style/Widget.MaterialRatingBar.RatingBar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Unsatisfied (2*)"/>
-        <RadioButton
-            android:textSize="14sp"
-            android:buttonTint="@color/colorPrimaryDark"
+            android:layout_centerVertical="true"
+            android:isIndicator="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:numStars="5"
+            android:progressTint="@color/colorPrimaryDark"
+            android:rating="4"
+            android:stepSize="1" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content">
+        <TextView
             android:textColor="@color/black"
-            android:id="@+id/one"
+            android:textSize="14sp"
+            android:layout_centerVertical="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Highly Unsatisfied (1*)"/>
-    </RadioGroup>
+            android:text="Neutral" />
+        <me.zhanghai.android.materialratingbar.MaterialRatingBar
+            style="@style/Widget.MaterialRatingBar.RatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:isIndicator="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:numStars="5"
+            android:progressTint="@color/colorPrimaryDark"
+            android:rating="3"
+            android:stepSize="1" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Unsatisfied" />
+        <me.zhanghai.android.materialratingbar.MaterialRatingBar
+            style="@style/Widget.MaterialRatingBar.RatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:isIndicator="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:numStars="5"
+            android:progressTint="@color/colorPrimaryDark"
+            android:rating="2"
+            android:stepSize="1" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Highly Unsatisfied" />
+        <me.zhanghai.android.materialratingbar.MaterialRatingBar
+            style="@style/Widget.MaterialRatingBar.RatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:progressTint="@color/colorPrimaryDark"
+            android:rating="1"
+            android:stepSize="1" />
+    </RelativeLayout>
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
