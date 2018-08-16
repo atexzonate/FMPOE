@@ -112,8 +112,9 @@ public class SpatialForm extends Fragment {
             model.setProvision((int) provision.getRating());
             DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference("spatial-ratings");
             mDatabase.push().setValue(model);
-            Toast.makeText(getActivity(), "Rating Submitted!", Toast.LENGTH_SHORT).show();
-            getActivity().finish();
+            Toast.makeText(getActivity(), "Survey Submitted, Thank you!", Toast.LENGTH_SHORT).show();
+            activity.form2 = true;
+            activity.showNextPopup();
         }
     }
 

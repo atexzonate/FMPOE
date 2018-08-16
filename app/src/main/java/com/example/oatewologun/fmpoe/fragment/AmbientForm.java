@@ -3,9 +3,11 @@ package com.example.oatewologun.fmpoe.fragment;
 import android.content.Context;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.app.Fragment;
+import android.support.annotation.RequiresApi;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -78,6 +80,7 @@ public class AmbientForm extends Fragment {
         unbinder.unbind();
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
     @OnClick(R.id.submit)
     public void onViewClicked() {
         boolean submit = true;
@@ -117,8 +120,9 @@ public class AmbientForm extends Fragment {
             model.setBuilding_design((int) building.getRating());
             mDatabase = FirebaseDatabase.getInstance().getReference("ambient-ratings");
             mDatabase.push().setValue(model);
-            Toast.makeText(getActivity(), "Rating Submitted!", Toast.LENGTH_SHORT).show();
-            getActivity().finish();
+            Toast.makeText(getActivity(), "Survey Submitted, Thank you!", Toast.LENGTH_SHORT).show();
+            activity.form1 = true;
+            activity.showNextPopup();
         }
     }
 

@@ -121,8 +121,9 @@ public class TechnologyForm extends Fragment {
             model.setAudio_contact((int) quality2.getRating());
             DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference("technology-ratings");
             mDatabase.push().setValue(model);
-            Toast.makeText(getActivity(), "Rating Submitted!", Toast.LENGTH_SHORT).show();
-            getActivity().finish();
+            Toast.makeText(getActivity(), "Survey Submitted, Thank you!", Toast.LENGTH_SHORT).show();
+            activity.form3 = true;
+            activity.showNextPopup();
         }
     }
 

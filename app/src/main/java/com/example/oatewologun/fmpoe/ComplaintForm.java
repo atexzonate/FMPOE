@@ -1,9 +1,12 @@
 package com.example.oatewologun.fmpoe;
 
 import android.content.Context;
+import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+import android.os.Build;
 import android.os.Bundle;
+import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.Button;
 import android.widget.EditText;
@@ -40,6 +43,7 @@ public class ComplaintForm extends AppCompatActivity {
         roomID = getIntent().getStringExtra("room_id");
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
     @OnClick(R.id.submit)
     public void onViewClicked() {
         if(name.getText().toString().isEmpty()){
@@ -61,8 +65,10 @@ public class ComplaintForm extends AppCompatActivity {
         model.setComplaint(message.getText().toString());
         mDatabase = FirebaseDatabase.getInstance().getReference("complaints");
         mDatabase.push().setValue(model);
-        Toast.makeText(this, "Complaint Submitted!", Toast.LENGTH_SHORT).show();
-        finish();
+        Toast.makeText(this, "Complain Submitted, Thank you!", Toast.LENGTH_SHORT).show();
+        finishAffinity();
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
     }
 
     public static boolean isInternetOn(Context context) {

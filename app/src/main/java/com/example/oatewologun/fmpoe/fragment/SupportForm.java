@@ -132,8 +132,9 @@ public class SupportForm extends Fragment {
             model.setHealth((int) health.getRating());
             DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference("building-support-ratings");
             mDatabase.push().setValue(model);
-            Toast.makeText(getActivity(), "Rating Submitted!", Toast.LENGTH_SHORT).show();
-            getActivity().finish();
+            Toast.makeText(getActivity(), "Survey Submitted, Thank you!", Toast.LENGTH_SHORT).show();
+            activity.form4 = true;
+            activity.showNextPopup();
         }
     }
 

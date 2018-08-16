@@ -2,10 +2,13 @@ package com.example.oatewologun.fmpoe.fragment;
 
 import android.app.Fragment;
 import android.content.Context;
+import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.annotation.RequiresApi;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,6 +18,7 @@ import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import com.example.oatewologun.fmpoe.FillPOEForm;
+import com.example.oatewologun.fmpoe.MainActivity;
 import com.example.oatewologun.fmpoe.R;
 import com.example.oatewologun.fmpoe.model.ElevatorModel;
 import com.example.oatewologun.fmpoe.model.WorkshopModel;
@@ -89,6 +93,7 @@ public class WorkshopForm extends Fragment {
         unbinder.unbind();
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
     @OnClick(R.id.submit)
     public void onViewClicked() {
         boolean submit = true;
@@ -140,8 +145,10 @@ public class WorkshopForm extends Fragment {
             model.setCleanliness_level((int) level.getRating());
             DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference("workshop-ratings");
             mDatabase.push().setValue(model);
-            Toast.makeText(getActivity(), "Rating Submitted!", Toast.LENGTH_SHORT).show();
-            getActivity().finish();
+            Toast.makeText(getActivity(), "Survey Submitted, Thank you!", Toast.LENGTH_SHORT).show();
+            getActivity().finishAffinity();
+            Intent intent = new Intent(getActivity(), MainActivity.class);
+            startActivity(intent);
         }
     }
 

@@ -54,21 +54,27 @@ public class FloorPlan extends AppCompatActivity {
 
         level = getIntent().getStringExtra("level");
         title.setText(level);
-        if (level.equals(Constants.gLvl)
+        /*if (level.equals(Constants.gLvl)
                 || level.equals(Constants.mLvl)
                 || level.equals(Constants.lvl1)
                 || level.equals(Constants.lvl5)) {
             roomIdPanel.setVisibility(View.GONE);
             orTxt.setVisibility(View.GONE);
             formPanel.setVisibility(View.GONE);
-        }
+        }*/
 
         if (level.equals(Constants.gLvl)) {
             image.setImageResource(R.drawable.h13_g_);
+            String[] temp = Constants.getLevelG_Rooms();
+            arrSize = temp.length;
         } else if (level.equals(Constants.mLvl)) {
             image.setImageResource(R.drawable.h13_m_);
+            String[] temp = Constants.getLevelM_Rooms();
+            arrSize = temp.length;
         } else if (level.equals(Constants.lvl1)) {
             image.setImageResource(R.drawable.h13_l1_);
+            String[] temp = Constants.getLevel1_Rooms();
+            arrSize = temp.length;
         } else if (level.equals(Constants.lvl2)) {
             image.setImageResource(R.drawable.h13_l2_);
             String[] temp = Constants.getLevel2_Rooms();
@@ -83,6 +89,8 @@ public class FloorPlan extends AppCompatActivity {
             arrSize = temp.length;
         } else if (level.equals(Constants.lvl5)) {
             image.setImageResource(R.drawable.h13_l5_);
+            String[] temp = Constants.getLevel5_Rooms();
+            arrSize = temp.length;
         } else if (level.equals(Constants.lvl6)) {
             image.setImageResource(R.drawable.h13_l6_);
             String[] temp = Constants.getLevel6_Rooms();
@@ -100,6 +108,14 @@ public class FloorPlan extends AppCompatActivity {
             options = Constants.getLevel4_Rooms();
         } else if (level.equals(Constants.lvl6)) {
             options = Constants.getLevel6_Rooms();
+        } else if (level.equals(Constants.gLvl)) {
+            options = Constants.getLevelG_Rooms();
+        } else if (level.equals(Constants.mLvl)) {
+            options = Constants.getLevelM_Rooms();
+        } else if (level.equals(Constants.lvl1)) {
+            options = Constants.getLevel1_Rooms();
+        } else if (level.equals(Constants.lvl5)) {
+            options = Constants.getLevel5_Rooms();
         }
 
         showRoomsIdsPopup(options);
